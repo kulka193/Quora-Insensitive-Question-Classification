@@ -15,6 +15,8 @@ length of each column in training data: (56370,)
 ## Model: 
 The model consists of an Embedding layer to fetch the word embeddings for words each data sample. Then it has a combination of convolutional (Conv1D) layers and Max Pool (x3), LSTM units and two more dense(with dropout) layers. Finally a sigmoid layer is used to make a decision between the classes.
 
+Normalized Text -> Embedding layer -> COnv1D -> MaxPool -> Conv1D -> MaxPool -> Conv1D -> MaxPool -> LSTM units -> Dense (dropout) -> Dense(dropout) -> Sigmoid->Output
+
 ## Training:
 
 The model was trained with ``batch size=256`` and the cross-entropy loss was optimized using a minibatch Adam optimizer. The training was done for about 10 epochs on a Tesla K80 to the Kaggle Kernel.  A 90/10 split was used on the training data further on the training data to evaluate on the validation data.
