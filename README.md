@@ -6,6 +6,11 @@ You can refer to the following [latest Kernel](https://www.kaggle.com/kulka193/k
 
 ## Dataset: 
 Contains about 13M data samples from Quora's question base with over 250K unique words in the text corpus. The insensitive questions are tagged as 1(positive example). It is an imbalanced dataset i.e., it has more of negaive examples than the positive ones. Data augmentation or upsampling might help. Also for larger split wrt validation data might give a better result. 
+``
+data keys Index(['qid', 'question_text', 'target'], dtype='object')
+length of each column in training data: (1306122,)
+length of each column in training data: (56370,)
+``
 
 ## Model: 
 The model consists of an Embedding layer to fetch the word embeddings for words each data sample. Then it has a combination of convolutional (Conv1D) layers and Max Pool (x3), LSTM units and two more dense(with dropout) layers. Finally a sigmoid layer is used to make a decision between the classes.
