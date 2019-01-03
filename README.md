@@ -21,12 +21,11 @@ The model was trained with ``batch size=256`` and the cross-entropy loss was opt
 
 ## Working with Notebook
 ``
-$git init
-$git clone https://github.com/kulka193/Quora-Insensitive-Question-Classification.git
-$cd Quora-Insensitive-Question-Classification
-$pip install -r requirements.txt
-$jupyter-notebook notebook.ipynb
-``
+$git init``
+`` $git clone https://github.com/kulka193/Quora-Insensitive-Question-Classification.git``
+`` $cd Quora-Insensitive-Question-Classification``
+``$pip install -r requirements.txt``
+``$jupyter-notebook notebook.ipynb``
 
 ## Evaluation and Results:
 
