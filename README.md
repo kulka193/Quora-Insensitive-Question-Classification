@@ -20,12 +20,13 @@ The model consists of an Embedding layer to fetch the word embeddings for words 
 The model was trained with ``batch size=256`` and the cross-entropy loss was optimized using a minibatch Adam optimizer. The training was done for about 10 epochs on a Tesla K80 to the Kaggle Kernel.  A 90/10 split was used on the training data further on the training data to evaluate on the validation data.
 
 ## Working with Notebook
-``
-$git init``
-`` $git clone https://github.com/kulka193/Quora-Insensitive-Question-Classification.git``
-`` $cd Quora-Insensitive-Question-Classification``
-``$pip install -r requirements.txt``
-``$jupyter-notebook notebook.ipynb``
+```
+$git init
+$git clone https://github.com/kulka193/Quora-Insensitive-Question-Classification.git
+$cd Quora-Insensitive-Question-Classification
+$pip install -r requirements.txt
+$jupyter-notebook notebook.ipynb
+```
 
 ## Evaluation and Results:
 
