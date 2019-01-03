@@ -15,7 +15,8 @@ length of each column in training data: (56370,)
 ## Model: 
 The model consists of an Embedding layer to fetch the word embeddings for words each data sample. Then it has a combination of convolutional (Conv1D) layers and Max Pool (x3), LSTM units and two more dense(with dropout) layers. Finally a sigmoid layer is used to make a decision between the classes.
 
-Normalized Text -> Embedding layer -> COnv1D -> MaxPool -> Conv1D -> MaxPool -> Conv1D -> MaxPool -> LSTM units -> Dense (dropout) -> Dense(dropout) -> Sigmoid->Output
+Summary:
+Normalized Text -> Embedding layer -> Conv1D -> MaxPool -> Conv1D -> MaxPool -> Conv1D -> MaxPool -> LSTM units -> Dense (dropout) -> Dense(dropout) -> Sigmoid->Output
 
 ## Training:
 
